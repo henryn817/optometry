@@ -1,0 +1,122 @@
+---
+title: 'Reviews | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'reviews/'
+eleventyNavigation:
+    key: Reviews
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/reviews.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Our Reviews</h1>
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/contacts.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/contacts.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/contacts.jpg" alt="new home" width="2500" height="1667" loading="eager">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews">
+        <div class="container">
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/ProfMorganT.png" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    We have been coming here for a few years and always have a good experience, no matter what doctor we are scheduled with.   We never feel rushed and the doctors and front end staff are always very personable and friendly.
+                </p>
+                <div class="star-group">
+                    <span class="name">Morgan T<span class="desc">Customer</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/DJohnson.png" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    I love my new contacts. The doctor is so wonderful. She really knows her stuff. I can see better than I have ever seen before and I’ve been wearing glasses since I was six years old.
+                </p>
+                <div class="star-group">
+                    <span class="name">D Johnson<span class="desc">Customer</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/rick.png" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    I have been using Dr. Nguyen for a couple of years now and have only had great experiences. She is sharp and competent and spends the time to answer my questions. I have worked with her on issues beyond just getting a prescription and she was extremely helpful. I admit I had originally chosen the office only because it was attached to the Costco, but I would absolutely pick her again.
+                </p>
+                <div class="star-group">
+                    <span class="name">Rick M.<span class="desc">Customer</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/Dana-customer.png" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    I have worn the same contact lens brand for 15 years and they were drying out my eyes. My eyes were always red and irritated as a result. She suggested more advanced technology and it has made a huge difference. No more red, irritated eyes! I feel so fortunate to have found this wonderful doctor. Thank you so much!                </p>
+                <div class="star-group">
+                    <span class="name">Dana<span class="desc">Customer</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/Mpope.png" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Dr. Nguyen is wonderful. Not only with my children, but also with my husband. She explains everything well, and provides options I didn't realize were available. Her office staff is wonderful in explaining what is and isn't covered in the exam. And I love the laminated prescription card! Thank you!
+                </p>
+                <div class="star-group">
+                    <span class="name">M. Pope<span class="desc">Customer</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/chris.png" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    I just love this doctor and her staff, they are always so welcoming and friendly. She takes the time to do a through exam but also asks about my family and what I have been up to, just really friendly. Because my father had macular degeneration quite badly she does some extra tests and takes the time to explain to me what she sees in the results.  This time we all were wearing masks due to the virus pandemic. The office is small but super efficient. It is always super clean but I now they go the extra mile which made me feel comfortable.                <div class="star-group">
+                    <span class="name">Chris<span class="desc">Customer</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

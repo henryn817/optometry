@@ -1,0 +1,78 @@
+---
+title: 'About | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/eyeglasses-background.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/eyeglasses-background.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/eyeglasses-background.jpg" alt="eyeglasses exam" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/woman-closeup.png">
+                    <source media="(min-width: 601px)" srcset="/assets/images/woman-closeup.png">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/woman-closeup.png" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/happy-woman.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/happy-woman.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/happy-woman.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">Dr. Kim Nguyen</h2>
+                <p class="cs-text">
+                    Dr. Kim Nguyen, OD, is the experienced optometrist and owner of Houston Family Eyecare in Humble, Texas where she puts patient health and outcomes above all else. Dr. Nguyen takes an integrative approach to eye care, partnering with her patients to design a plan that meets their vision needs, utilizing a combination of cutting-edge treatments and alternative therapies.
+                </p>
+                <p class="cs-text">
+                    After earning her Bachelor of Arts in biology from University of Texas, Arlington, Dr. Nguyen went on to earn her Doctor of Optometry from the University of Houston, College of Optometry in Houston, TX.
+                </p>
+                <p class="cs-text">
+                    Prior to opening Houston Family Eyecare, Dr. Nguyen gained valuable experience working for private optometry practices throughout the greater Houston area. Her ultimate goal was to always serve her community and help change the patient perspective on the value of eye care by making it accessible and affordable for all.
+                </p>
+                <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                    </p>
+                    <span class="cs-name">Dr. Kim Nguyen</span>
+                    <span class="cs-job">Optometrist</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                </div>
+                <a href="houstonfamilyeyecare@gmail.com" class="cs-button-solid">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
