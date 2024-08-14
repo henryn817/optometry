@@ -537,6 +537,15 @@
     /* reset margin so it won't interfere with flexbox */
     margin: 0;
   }
+  #reviews .cs-title {
+    max-width: 100.75rem;
+    text-align: center;
+  }
+  #reviews .cs-text {
+    /* 88px - 104px */
+    max-width: 100.625rem;
+    text-align: center;
+  }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
